@@ -351,9 +351,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
   background-color: rgba(34, 39, 43, 0.8);
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-#hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
+#home .carousel, #home .carousel-inner, #home .carousel-item, #home .carousel-item::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -372,12 +372,12 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-#hero .carousel-item::before {
+#home .carousel-item::before {
   content: '';
   background-color: rgba(12, 13, 14, 0.8);
 }
 
-#hero .carousel-container {
+#home .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,43 +388,43 @@ h1, h2, h3, h4, h5, h6 {
   right: 50px;
 }
 
-#hero .container {
+#home .container {
   text-align: center;
 }
 
-#hero h2 {
+#home h2 {
   color: #fff;
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
 }
 
-#hero p {
+#home p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
 }
 
-#hero .carousel-inner .carousel-item {
+#home .carousel-inner .carousel-item {
   transition-property: opacity;
   background-position: center top;
 }
 
-#hero .carousel-inner .carousel-item,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
+#home .carousel-inner .carousel-item,
+#home .carousel-inner .active.carousel-item-start,
+#home .carousel-inner .active.carousel-item-end {
   opacity: 0;
 }
 
-#hero .carousel-inner .active,
-#hero .carousel-inner .carousel-item-next.carousel-item-start,
-#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+#home .carousel-inner .active,
+#home .carousel-inner .carousel-item-next.carousel-item-start,
+#home .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
   transition: 0.5s;
 }
 
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+#home .carousel-control-next-icon, #home .carousel-control-prev-icon {
   background: none;
   font-size: 30px;
   line-height: 0;
@@ -441,12 +441,12 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+#home .carousel-control-next-icon:hover, #home .carousel-control-prev-icon:hover {
   background: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
 }
 
-#hero .carousel-indicators li {
+#home .carousel-indicators li {
   cursor: pointer;
   background: #fff;
   overflow: hidden;
@@ -458,12 +458,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#hero .carousel-indicators li.active {
+#home .carousel-indicators li.active {
   opacity: 1;
   background: #428bca;
 }
 
-#hero .btn-get-started {
+#home .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -479,18 +479,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #428bca;
 }
 
-#hero .btn-get-started:hover {
+#home .btn-get-started:hover {
   background: #5697d0;
 }
 
 @media (max-width: 768px) {
-  #hero h2 {
+  #home h2 {
     font-size: 28px;
   }
 }
 
 @media (max-height: 500px) {
-  #hero {
+  #home {
     height: 120vh;
   }
 }
