@@ -372,18 +372,12 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-#library .carousel-item::before {
-  content: '';
-  background-color: rgba(12, 13, 14, 0.8);
-}
-
 #library .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
-  top: 70px;
+  bottom: 50px;
   left: 50px;
   right: 50px;
 }
