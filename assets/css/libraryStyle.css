@@ -132,13 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
-#header .img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #555;
-}
-
 @media (max-width: 992px) {
   #header {
     border: 0;
@@ -358,32 +351,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Home Section
+# Library Section
 --------------------------------------------------------------*/
-#home {
+#library {
   width: 100%;
-  height: 88.6vh;
+  height: 100vh;
   background-color: rgba(34, 39, 43, 0.8);
   overflow: hidden;
-  position: absolute;
+  position: relative;
 }
 
-#home .carousel, #home .carousel-inner, #home .carousel-item, #home .carousel-item::before {
-  background-size: contain;
+#library .carousel, #library .carousel-inner, #library .carousel-item, #library .carousel-item::before {
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 23.5px;
+  top: 0;
   right: 0;
   left: 0;
   bottom: 0;
 }
 
-#home .carousel-item::before {
+#library .carousel-item::before {
   content: '';
+  background-color: rgba(12, 13, 14, 0.8);
 }
 
-#home .carousel-container {
+#library .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,44 +388,43 @@ h1, h2, h3, h4, h5, h6 {
   right: 50px;
 }
 
-#home .container {
-  margin-top: 8%;
-  margin-left: 65%;
+#library .container {
+  text-align: center;
 }
 
-#home h2 {
+#library h2 {
   color: #fff;
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
 }
 
-#home p {
+#library p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
 }
 
-#home .carousel-inner .carousel-item {
+#library .carousel-inner .carousel-item {
   transition-property: opacity;
   background-position: center top;
 }
 
-#home .carousel-inner .carousel-item,
-#home .carousel-inner .active.carousel-item-start,
-#home .carousel-inner .active.carousel-item-end {
+#library .carousel-inner .carousel-item,
+#library .carousel-inner .active.carousel-item-start,
+#library .carousel-inner .active.carousel-item-end {
   opacity: 0;
 }
 
-#home .carousel-inner .active,
-#home .carousel-inner .carousel-item-next.carousel-item-start,
-#home .carousel-inner .carousel-item-prev.carousel-item-end {
+#library .carousel-inner .active,
+#library .carousel-inner .carousel-item-next.carousel-item-start,
+#library .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
   transition: 0.5s;
 }
 
-#home .carousel-control-next-icon, #home .carousel-control-prev-icon {
+#library .carousel-control-next-icon, #library .carousel-control-prev-icon {
   background: none;
   font-size: 30px;
   line-height: 0;
@@ -448,12 +441,12 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-#home .carousel-control-next-icon:hover, #home .carousel-control-prev-icon:hover {
+#library .carousel-control-next-icon:hover, #library .carousel-control-prev-icon:hover {
   background: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.8);
 }
 
-#home .carousel-indicators li {
+#library .carousel-indicators li {
   cursor: pointer;
   background: #fff;
   overflow: hidden;
@@ -465,18 +458,18 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#home .carousel-indicators li.active {
+#library .carousel-indicators li.active {
   opacity: 1;
   background: #428bca;
 }
 
-#home .btn-get-started {
+#library .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 7% 30%;
+  padding: 14px 32px;
   border-radius: 4px;
   transition: 0.5s;
   line-height: 1;
@@ -486,18 +479,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #428bca;
 }
 
-#home .btn-get-started:hover {
+#library .btn-get-started:hover {
   background: #5697d0;
 }
 
 @media (max-width: 768px) {
-  #home h2 {
+  #library h2 {
     font-size: 28px;
   }
 }
 
 @media (max-height: 500px) {
-  #home {
+  #library {
     height: 120vh;
   }
 }
