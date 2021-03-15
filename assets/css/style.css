@@ -132,6 +132,13 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+#header .img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
 @media (max-width: 992px) {
   #header {
     border: 0;
@@ -355,18 +362,18 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #home {
   width: 100%;
-  height: 100vh;
+  height: 88.6vh;
   background-color: rgba(34, 39, 43, 0.8);
   overflow: hidden;
-  position: relative;
+  position: absolute;
 }
 
 #home .carousel, #home .carousel-inner, #home .carousel-item, #home .carousel-item::before {
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
+  top: 23.5px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -374,7 +381,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #home .carousel-item::before {
   content: '';
-  background-color: rgba(12, 13, 14, 0.8);
 }
 
 #home .carousel-container {
@@ -389,7 +395,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #home .container {
-  text-align: center;
+  margin-top: 8%;
+  margin-left: 65%;
 }
 
 #home h2 {
@@ -469,7 +476,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 14px 32px;
+  padding: 7% 30%;
   border-radius: 4px;
   transition: 0.5s;
   line-height: 1;
