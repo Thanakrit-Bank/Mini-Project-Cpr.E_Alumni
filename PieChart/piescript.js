@@ -18,7 +18,7 @@ var label = d3.arc()
     .outerRadius(radius)
     .innerRadius(radius - 80);
 
-d3.csv("browseruse.csv", function(error, data) {
+d3.csv("PieChart/browseruse.csv", function(error, data) {
 if (error) {
     throw error;
 }
