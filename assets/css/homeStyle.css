@@ -372,18 +372,12 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
 }
 
-#home .carousel-item::before {
-  content: '';
-  background-color: rgba(12, 13, 14, 0.8);
-}
-
 #home .carousel-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
-  top: 70px;
+  bottom: 50px;
   left: 50px;
   right: 50px;
 }
@@ -430,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(90, 90, 90);
   border-radius: 50px;
   transition: 0.3s;
   color: rgba(255, 255, 255, 0.5);
