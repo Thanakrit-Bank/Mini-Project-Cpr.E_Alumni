@@ -374,7 +374,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #library .carousel-item::before {
   content: '';
-  background-color: rgba(12, 13, 14, 0.8);
 }
 
 #library .carousel-container {
