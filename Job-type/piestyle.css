@@ -1,0 +1,14 @@
+.arc text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px ;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: #fff;
+}
+
+.title {
+    fill: teal;
+    font-weight: bold;
+}
