@@ -16,7 +16,7 @@ var path = d3.arc()
 
 var label = d3.arc()
     .outerRadius(radius)
-    .innerRadius(radius - 80);
+    .innerRadius(radius - 150);
 
 d3.csv("JobChart/jobpercent.csv", function(error, data) {
 if (error) {
