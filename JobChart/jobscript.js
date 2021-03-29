@@ -18,7 +18,7 @@ var label = d3.arc()
     .outerRadius(radius)
     .innerRadius(radius - 80);
 
-d3.csv("Job-type/Job-percent.csv", function(error, data) {
+d3.csv("JobChart/jobpercent.csv", function(error, data) {
 if (error) {
     throw error;
 }
