@@ -24,6 +24,7 @@
   <link href="assets/general/css/general.css" rel="stylesheet">
   <link href="assets/css/libraryStyle.css" rel="stylesheet">
   <link href="PieChart/piestyle.css" rel="stylesheet">
+  <link href="JobChart/jobstyle.css" rel="stylesheet">
 
   <!-- Load d3.js -->
   <script src="https://d3js.org/d3.v4.js"></script>
@@ -64,7 +65,7 @@
         <div class="carousel-item active" style="background-image: url(assets/img/pie-chart-bg.png)">
           <div class="carousel-container">
             <div class="container">
-              <svg width="500" height="400"></svg>
+              <svg id="box1" width="500" height="400"></svg>
             </div>
           </div>
         </div>
@@ -73,20 +74,7 @@
         <div class="carousel-item" style="background-image: url(...)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animated fadeInDown">Test</h2>
-              <p class="animated fadeInUp">...</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" style="background-image: url(...)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animated fadeInDown">Test</h2>
-              <p class="animated fadeInUp">...</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+              <svg id="box2" width="500" height="400"></svg>
             </div>
           </div>
         </div>
@@ -228,6 +216,7 @@
 
   <!-- D3 Main JS File -->
   <script src="PieChart/piescript.js" charset="utf-8"></script>
+  <script src="JobChart/jobscript.js" charset="utf-8"></script>
 
 </body>
 

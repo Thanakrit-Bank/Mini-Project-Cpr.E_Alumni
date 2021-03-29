@@ -1,4 +1,4 @@
-var svg = d3.select("svg"),
+var svg = d3.select("#box1"),
 width = svg.attr("width"),
 height = svg.attr("height"),
 radius = Math.min(width, height) / 2;
