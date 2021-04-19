@@ -18,7 +18,7 @@ var label = d3.arc()
     .outerRadius(radius)
     .innerRadius(radius - 160);
 
-d3.csv("PieChart/browseruse.csv", function(error, data) {
+d3.csv("PieChart/yearchart.csv", function(error, data) {
 if (error) {
     throw error;
 }
@@ -30,7 +30,7 @@ var arc = g.selectAll(".arc")
 
 arc.append("path")
     .attr("d", path)
-    .attr("fill", function(d) { return color(d.data.browser); });
+    .attr("fill", function(d) { return color(d.data.year); });
         
 console.log(arc)
         
@@ -38,7 +38,7 @@ arc.append("text")
     .attr("transform", function(d) { 
             return "translate(" + label.centroid(d) + ")"; 
     })
-    .text(function(d) { return d.data.browser; });
+    .text(function(d) { return d.data.year; });
 });
 
 svg.append("g")
